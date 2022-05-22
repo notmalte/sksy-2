@@ -16,7 +16,7 @@
     <div class="container py-3 py-md-5 px-3">
       <div class="d-flex align-items-center pb-3">
         <h1>Overview</h1>
-        <a class="ms-auto btn btn-primary" href="./add">add</a>
+        <a class="ms-auto btn btn-primary" href="/add">add</a>
       </div>
       {% if todos_list %}
       <div class="table-responsive">
@@ -36,12 +36,12 @@
               <td>{{ question.percent_done }}%</td>
               <td>
                 <div class="d-flex flex-column flex-md-row">
-                  <a class="btn btn-danger my-1" href="./delete/{{ todo.id }}"
+                  <a class="btn btn-danger my-1" href="/delete/{{ todo.id }}"
                     >delete</a
                   >
                   <a
                     class="btn btn-primary my-1 ms-md-2"
-                    href="./edit/{{ todo.id }}"
+                    href="/edit/{{ todo.id }}"
                     >edit</a
                   >
                 </div>
@@ -56,7 +56,7 @@
       <p>No todos found.</p>
       {% endif %}
 
-      <a href="./imprint">Imprint</a>
+      <a href="/imprint">Imprint</a>
     </div>
   </body>
 </html>
