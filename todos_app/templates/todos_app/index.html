@@ -35,7 +35,7 @@
               <td>{{ todo.deadline }}</td>
               <td>{{ todo.percent_done }}%</td>
               <td>
-                <div class="d-flex flex-column flex-md-row">
+                <div class="d-flex justify-content-end flex-column flex-md-row">
                   <a class="btn btn-danger my-1" href="/delete/{{ todo.id }}">delete</a>
                   <a class="btn btn-primary my-1 ms-md-2" href="/edit/{{ todo.id }}">edit</a>
                 </div>
