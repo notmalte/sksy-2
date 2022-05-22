@@ -31,19 +31,13 @@
           <tbody>
             {% for todo in todos_list %}
             <tr>
-              <td>{{ question.title }}</td>
-              <td>{{ question.deadline }}</td>
-              <td>{{ question.percent_done }}%</td>
+              <td>{{ todo.title }}</td>
+              <td>{{ todo.deadline }}</td>
+              <td>{{ todo.percent_done }}%</td>
               <td>
                 <div class="d-flex flex-column flex-md-row">
-                  <a class="btn btn-danger my-1" href="/delete/{{ todo.id }}"
-                    >delete</a
-                  >
-                  <a
-                    class="btn btn-primary my-1 ms-md-2"
-                    href="/edit/{{ todo.id }}"
-                    >edit</a
-                  >
+                  <a class="btn btn-danger my-1" href="/delete/{{ todo.id }}">delete</a>
+                  <a class="btn btn-primary my-1 ms-md-2" href="/edit/{{ todo.id }}">edit</a>
                 </div>
               </td>
             </tr>
